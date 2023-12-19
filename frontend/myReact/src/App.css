@@ -1,0 +1,18 @@
+/* Add these styles to your CSS file or use a styling solution like styled-components */
+
+/* ... existing styles ... */
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-item.selected {
+  background-color: #4caf50; /* Green background for selected choice */
+  color: #fff; /* White text for selected choice */
+}
