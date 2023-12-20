@@ -63,7 +63,7 @@ This Django project aims to create and manage polls for hiring purposes. Users c
     ```
 # After running the Celery you need to open another shell and activate the env 
 
-3. Run Celery:
+3. Run django project:
     ```
     python manage.py runserver 
 
