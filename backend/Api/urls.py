@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import QuestionList,VoteCreate,QuestionDetail,ChoiceCreateView,ChoiceUpdateDeleteView
+from .views import (QuestionList,VoteCreate,QuestionDetail,ChoiceCreateView,ChoiceUpdateDeleteView,
+               )
 urlpatterns = [
     path('questions/', QuestionList.as_view(), name='question-list'),#for question creting and listing 
     path('questions/<int:pk>/', QuestionDetail.as_view(), name='question-detail'), #for updating and deleting 
@@ -9,3 +10,5 @@ urlpatterns = [
 
     
 ]
+
+    

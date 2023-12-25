@@ -58,7 +58,7 @@ This Django project aims to create and manage polls for hiring purposes. Users c
 
 2. Run Celery:
     ```
-    celery -A polls_project worker -l info
+    celery -A core worker --loglevel=info
 
     ```
 # After running the Celery you need to open another shell and activate the env 

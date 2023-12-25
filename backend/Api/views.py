@@ -33,7 +33,7 @@ class ChoiceUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Choice.objects.all()
     serializer_class = ChoiceSerializer
 
-
+  
     
 
 
@@ -71,3 +71,7 @@ class VoteCreate(generics.CreateAPIView):
         send_email_task.delay(subject, message, [voter_email])
 
         return JsonResponse({'detail': 'Vote submitted successfully.'}, status=201)
+
+
+
+    
